@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  list,index: MyString
+  'true': one
+  description: MyString
+  completed: false
+
+two:
+  list,index: MyString
+  'true': two
+  description: MyString
+  completed: false
