@@ -22,11 +22,13 @@ Rails.application.routes.draw do
     resources :users do
       resources :lists
     end
-
+    
     resources :lists, only: [] do
       resources :items, only: [:create, :update]
     end
 
-    resources :items, only: [:destroy]
+    resources :lists, only: [:create, :update]
+
+    resources :items, only: [:destroy, :update]
   end
 end

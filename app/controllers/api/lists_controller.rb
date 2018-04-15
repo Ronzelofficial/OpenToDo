@@ -28,11 +28,10 @@ class Api::ListsController < ApiController
       render json: { errors: list.errors.full_messages }, status: :unprocessable_entity
     end
   end
-end 
+end
 
   private
 
   def list_params
     params.require(:list).permit(:name, :permissions)
   end
-end
